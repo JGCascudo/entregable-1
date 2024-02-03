@@ -1,0 +1,114 @@
+.app{
+    /* Al momento de traducir el html css y js la carpeta public desaparece asi que es opcional poner public en la ruta */
+    background-image: url('../fondo1.jpg');
+    background-size: cover;
+     /*que cubra todo */
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.app__title{
+    position: absolute;
+    text-align: center;
+    top:15%;
+    left: 50%;
+    transform: translate(-50%);
+    color: whitesmoke;
+    filter: drop-shadow(6px 7px 1px #332f2c);
+}
+
+.app__card{
+    /* background-color: #fff8; */
+    background-image: url("../rectangle1.svg");
+    padding: 1.5em 2em;
+    /* 820 */
+    width:100% ;
+    min-height: 250px;
+    max-width: 600px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+.app__phrase{
+    font-weight: 300;
+    color:#a4a4a4;
+}
+.app__btn{
+    display:block;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 0.8em 2em;
+    font-size: 1.1 rem;
+    border-radius: 2em;
+    transition: font-size 100ms ease;
+
+}
+.app__btn:hover{
+    font-size: 1.1rem;
+}
+
+@media (max-width:821px) {
+    
+    .app__title{
+        top:10%;
+    }
+    .app__card{
+        max-width:70vw;
+    
+    }
+}
+@media (max-width:415px) {
+    
+    .app__title{
+        top:5%;
+        font-size: 40px;
+    }
+    .app__card{
+        max-width:90vw;
+        background-image: url("../rectangle1.svg") ;
+        background-size:90vw 28vh;
+    
+    }
+    
+}
+
+@media (max-width:380px) {
+    
+    .app__title{
+        top:5%;
+        font-size: 38px;
+    }
+    .app__card{
+        max-width:90vw;
+        background-image: url("../rectangle1.svg") ;
+        background-size:90vw 35vh;
+    
+    }
+    
+}
+
+@media (max-width:285px) {
+    
+    .app__title{
+        top:5%;
+        font-size: 40px;
+    }
+    .app__card{
+        max-width:90vw;
+        height: 40vh;
+        background-size:90vw 40vh;
+        
+    }
+    .app__phrase{
+        top: 30px;
+        font-size: 0.7rem;
+    }
+
+    
+}
